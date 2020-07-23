@@ -12,9 +12,9 @@ def convert(filein, fileout, encoding='utf-8') -> bool
 
 It takes three parameters.
 
-* filein: The relative or absolute path and FULL name of the IXF file as input.
-* fileout: The relative or absolute path and FULL file name of the JSON file as output.
-* encoding: A string which specifies the encoding of CHAR and VARCHAR type. It can be omitted and the function will take `utf-8` as the default value.
+* `filein`: The relative or absolute path and FULL name of the IXF file as input.
+* `fileout`: The relative or absolute path and FULL file name of the JSON file as output.
+* `encoding`: A string which specifies the encoding of CHAR and VARCHAR type. It can be omitted and the function will take `utf-8` as the default value.
 
 ## Example
 
