@@ -103,7 +103,7 @@ def convert(filein, fileout, encoding='utf-8') -> bool:
         if column['IXFCRECT'] != b'C':
             logging.log(
                 logging.INFO, 'This IXF does not contain a valid column descriptor!')
-            exit()
+            return False
         column['IXFCDSIZ'] = fin.read(int(column['IXFCRECL']) - 862)
         columns.append(column)
 
@@ -168,7 +168,7 @@ def convert(filein, fileout, encoding='utf-8') -> bool:
                 length = int((p + 2) / 2)
                 field = fields[pos:pos + length]
 
-                # Process packed-decimal format as refer'd in https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzasd/padecfo.htm
+                # Process packed-decimal format
                 dec = 0.0
 
                 for b in range(0, length - 1):
