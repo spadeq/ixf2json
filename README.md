@@ -16,6 +16,8 @@ It takes three parameters.
 * `fileout`: The relative or absolute path and FULL file name of the JSON file as output.
 * `encoding`: A string which specifies the encoding of CHAR and VARCHAR type. It can be omitted and the function will take `utf-8` as the default value.
 
+**Warning:** This utility will load all the data into memory firstly and then flush them to JSON file. The process may occupy huge memory depending on the size of IXF file. Use it carefully.
+
 ## Example
 
 ```python
