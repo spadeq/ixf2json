@@ -1,4 +1,4 @@
-# ixf2json
+# An operational IXF to JSON converter
 
 A utility that converts IBM DB2 exported IXF to JSON format!
 
