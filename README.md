@@ -1,4 +1,4 @@
-# An operational IXF to JSON converter
+# IXF to JSON converter
 
 A utility that converts IBM DB2 exported IXF to JSON format!
 
@@ -34,6 +34,4 @@ ixf2json.convert('test.ixf', 'test.json', encoding='gbk')
 
 [Packed-Decimal Format of IBM System/370](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzasd/padecfo.htm)
 
-## Thanks To
-
-This project is inspir'd by [sapenov's IXF converter](https://github.com/sapenov/IXF). Although it's unfinish'd and not operational, I did get some inspiration from it, especially the method of reading the metadata of an IXF file.
+This project is inspir'd by [sapenov's IXF converter](https://github.com/sapenov/IXF). Although it's unfinish'd and not operational, I did get some inspiration from it.
